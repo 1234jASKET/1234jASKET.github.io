@@ -118,6 +118,18 @@
     font-size: 28px;
     }
     </style>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        document.querySelector('select').onchange = function() {
+            document.querySelector('#hello').style.color = this.value;
+        }
+        
+    });
+
+</script>
     <body>
         <h1 class="heading">Hello, World</h1>
         <p class="paragraph">Welcome/Bienvenue</p>
@@ -169,5 +181,18 @@
             <div class="grid-item">Comme nous pardonnons aussi à ceux qui nous ont offensés.</div>
             <div class="grid-item">Et ne nous laisse pas entrer en tentation, mais délivre-nous du mal.</div>
         </div>
+
+        <h1 id="hello">Our Father who art in heaven,
+            hallowed be Thy name, Thy kingdom come, 
+            Thy will be done on earth as it is in heaven.
+            Give us this day our daily bread.
+            Forgive us our trespasses as we forgive those who trespass against us.
+            And do not let us enter into temptation, but deliver us from evil.</h1>
+        <select>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>>
     </body>
 </html>
