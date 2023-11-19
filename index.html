@@ -198,3 +198,47 @@
         </select>
     </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Single page</title>
+        <style>
+            div {
+                display: none;
+            }
+        </style>
+        <script>
+
+            function showPage(page) {
+                document.querySelectorAll('div').forEach(div => {
+                    div.style.display = 'none';
+                })
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = function() {
+                        showPage(this.dataset.page);
+                    }
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <button data-page="page1"><img src="cat.jpg.jpg" alt="cat.jpg" width="45">A</button>
+        <button data-page="page2">Forgive us our trespasses as we forgive those who</button>
+        <button data-page="page3">And do not let us enter into temptation, but deliver us</button>
+        <div id="page1">
+            <h1>This is page 1.</h1>
+        </div>
+        <div id="page2">
+            <h1>This is page 2.</h1>
+        </div>
+        <div id="page3">
+            <h1>This is page 3.</h1>
+        </div> 
+    </body>
+</html>
