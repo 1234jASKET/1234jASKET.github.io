@@ -120,21 +120,42 @@
     color: rgb(141, 52, 113);
     font-size: 28px;
     }
+
+      div {
+                display: none;
+            }
+
+      
     </style>
 
-<script>
+    <script>
 
     document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector('select').onchange = function() {
-            document.querySelector('#hello').style.color = this.value;
+            document.querySelector('#hello').style.color =  this.value;  
+                
         }
         
     });
+  
+          function showPage(page) {
+                document.querySelectorAll('div').forEach(div => {
+                    div.style.display = 'none';
+                })
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
 
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = function() {
+                        showPage(this.dataset.page);
+                    }
+                });
+            });
 </script>
     <body>
-        <a href="1234jASKET.github.io"> <img src="cat.jpg.jpg" alt="cat.jpg" width="100"> </a>
+        <a href>1234jASKET.github.io</a>
         <p class="paragraph">Welcome to my GitHub page</p>
         <h2 class="selection">SEAKE-Jounal</h2>
         <h5 class="prions">The world is suffering</h5>
@@ -170,65 +191,41 @@
                 notre pain de ce jour.</div>
             <div>3. Pardonne-nous nos offenses
                 comme nous pardonnons aussi à ceux qui nous ont offensés.</div>
-            <div>4. Et ne nous laisse pas entrer en tentation, mais délivre-nous du mal.</div>
+            <div>4. Et ne nous laisse pas entrer en tentation, mais délivre- 
+      nous du mal.</div>
         </div>
 
         <div id="grid">
-            <div class="grid-item">Notre Père qui es aux cieux, que Ton Nom soit sanctifié,</div>
+            <div class="grid-item">Notre Père qui es aux cieux, que Ton Nom 
+     soit sanctifié,</div>
             <div class="grid-item">Que Ton règne vienne,</div>
-            <div class="grid-item">donne une mise officielle</div>
+            <div class="grid-item">Que Ton règne vienne</div>
             <div class="grid-item">Donne-nous aujourd’hui
                 notre pain de ce jour.
                 Pardonne-nous nos offenses</div>
-            <div class="grid-item">Comme nous pardonnons aussi à ceux qui nous ont offensés.</div>
-            <div class="grid-item">Et ne nous laisse pas entrer en tentation, mais délivre-nous du mal.</div>
+            <div class="grid-item">Comme nous pardonnons aussi à ceux qui nous 
+          ont offensés.</div>
+            <div class="grid-item">Et ne nous laisse pas entrer en tentation, 
+        mais délivre-nous du mal.</div>
         </div>
 
         <h1 id="hello">Our Father who art in heaven,
             hallowed be Thy name, Thy kingdom come, 
             Thy will be done on earth as it is in heaven.
             Give us this day our daily bread.
-            Forgive us our trespasses as we forgive those who trespass against us.
-            And do not let us enter into temptation, but deliver us from evil.</h1>
+            Forgive us our trespasses as we forgive those who trespass against 
+           us.
+            And do not let us enter into temptation, but deliver us from evil. 
+      </h1>
         <select>
             <option value="black">Black</option>
             <option value="red">Red</option>
             <option value="blue">Blue</option>
             <option value="green">Green</option>
         </select>
-    </body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Single page</title>
-        <style>
-            div {
-                display: none;
-            }
-        </style>
-        <script>
-
-            function showPage(page) {
-                document.querySelectorAll('div').forEach(div => {
-                    div.style.display = 'none';
-                })
-                document.querySelector(`#${page}`).style.display = 'block';
-            }
-
-            document.addEventListener('DOMContentLoaded', function() {
-                document.querySelectorAll('button').forEach(button => {
-                    button.onclick = function() {
-                        showPage(this.dataset.page);
-                    }
-                });
-            });
-
-        </script>
-    </head>
-    <body>
-        <button data-page="page1"><img src="cat.jpg.jpg" alt="cat.jpg" width="45">A</button>
+      
+      <button data-page="page1">seake</button>
         <button data-page="page2">Forgive us our trespasses as we forgive those who</button>
         <button data-page="page3">And do not let us enter into temptation, but deliver us</button>
         <div id="page1">
