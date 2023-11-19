@@ -5,18 +5,6 @@
     </head>
     <style>
     
-    .heading 
-    {
-    color: red;
-    font-size: 28px;
-    }
-
-
-    .paragraph 
-    {
-    color: blue;
-    font-size: 40px;
-    }
 
     .selection 
     {
@@ -121,9 +109,17 @@
     font-size: 28px;
     }
 
+<<<<<<< HEAD
     div {
                 display: none;
             }
+=======
+      div {
+                display: none;
+            }
+
+      
+>>>>>>> 843a856973590abbe6ca641906b3129875ef4165
     </style>
 
     <script>
@@ -131,11 +127,20 @@
     document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector('select').onchange = function() {
-            document.querySelector('#hello').style.color = this.value;
+            document.querySelector('#hello').style.color =  this.value;  
+                
         }
         
     });
+  
+          function showPage(page) {
+                document.querySelectorAll('div').forEach(div => {
+                    div.style.display = 'none';
+                })
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
 
+<<<<<<< HEAD
 
             function showPage(page) {
                 document.querySelectorAll('div').forEach(div => {
@@ -144,6 +149,8 @@
                 document.querySelector(`#${page}`).style.display = 'block';
             }
 
+=======
+>>>>>>> 843a856973590abbe6ca641906b3129875ef4165
             document.addEventListener('DOMContentLoaded', function() {
                 document.querySelectorAll('button').forEach(button => {
                     button.onclick = function() {
@@ -151,65 +158,25 @@
                     }
                 });
             });
+<<<<<<< HEAD
     </script>
+=======
+</script>
+>>>>>>> 843a856973590abbe6ca641906b3129875ef4165
     <body>
-        <a href="1234jASKET.github.io">https://www.goole.com</a>
-        <p class="paragraph">Welcome to my GitHub page</p>
-        <h2 class="selection">CNSEAKE-Jounal</h2>
+        <h2 class="selection">SEAKE-Jounal</h2>
         <h5 class="prions">The world is suffering</h5>
         <h6 class="pray">Let us pray for our brothers</h6>
-        <p class="html">أبانا الذي في السماوات ، ليتقدس اسمك ، ليأت ملكوتك ،
-            لتكن مشيئتك
-            على الأرض كما هو في السماء.
-            أعطنا اليوم
-            خبزنا لهذا اليوم.
-            اغفر لنا ذنوبنا
-            كما نغفر أيضا لأولئك الذين يتعدون علينا.
-            ولا تدعونا ندخل في تجربة ، بل نجنا من الشر.
-            </p>
-        <h3 class="header.header-container">Our Father who art in heaven,
-            hallowed be Thy name, Thy kingdom come, 
-            Thy will be done on earth as it is in heaven.
-            Give us this day our daily bread.
-            Forgive us our trespasses as we forgive those who trespass against us.
-            And do not let us enter into temptation, but deliver us from evil.
-        </h3>
-
-        <p4 class=".item article .title-box">אבינו שבשמים, קדוש שמך, מלכותך תבוא,
-            מלכותך תיעשה בארץ כמו בשמים. 
-            תן לנו היום הזה את לחם יומנו. 
-            סלח לנו על הסגת הגבול שלנו כפי שאנו סולחים למי שמסיג גבול נגדנו. 
-            ואל תיתן לנו להיכנס לפיתוי, 
-            אלא לגאול אותנו מן הרע.</p4>
-
-        <div id="container">
-            <div>1. Que Ta volonté soit faite
-                sur la terre comme au ciel.</div>
-            <div>2. Donne-nous aujourd’hui
-                notre pain de ce jour.</div>
-            <div>3. Pardonne-nous nos offenses
-                comme nous pardonnons aussi à ceux qui nous ont offensés.</div>
-            <div>4. Et ne nous laisse pas entrer en tentation, mais délivre-nous du mal.</div>
-        </div>
-
-        <div id="grid">
-            <div class="grid-item">Notre Père qui es aux cieux, que Ton Nom soit sanctifié,</div>
-            <div class="grid-item">Que Ton règne vienne,</div>
-            <div class="grid-item">Que Ta volonté soit faite
-                sur la terre comme au ciel.</div>
-            <div class="grid-item">Donne-nous aujourd’hui
-                notre pain de ce jour.
-                Pardonne-nous nos offenses</div>
-            <div class="grid-item">Comme nous pardonnons aussi à ceux qui nous ont offensés.</div>
-            <div class="grid-item">Et ne nous laisse pas entrer en tentation, mais délivre-nous du mal.</div>
-        </div>
+        <p class="html"</p>
 
         <h1 id="hello">Our Father who art in heaven,
             hallowed be Thy name, Thy kingdom come, 
             Thy will be done on earth as it is in heaven.
             Give us this day our daily bread.
-            Forgive us our trespasses as we forgive those who trespass against us.
-            And do not let us enter into temptation, but deliver us from evil.</h1>
+            Forgive us our trespasses as we forgive those who trespass against 
+           us.
+            And do not let us enter into temptation, but deliver us from evil. 
+      </h1>
         <select>
             <option value="black">Black</option>
             <option value="red">Red</option>
@@ -217,6 +184,7 @@
             <option value="green">Green</option>
         </select>
 
+<<<<<<< HEAD
         <button data-page="page1">Page 1</button>
         <button data-page="page2">Page 2</button>
         <button data-page="page3">Page 3</button>
@@ -225,5 +193,20 @@
             Immediately, the one who had received the five talents went to use them and gained five more. Likewise, he who received two talents gained two more. But he who had received only one went and dug in the earth and hid his master's money.</h1></div>
         <div id="page2"><h1>This is page 2.</h1></div>
         <div id="page3"><h1>This is page 3.</h1></div>
+=======
+      
+      <button data-page="page1">seake</button>
+        <button data-page="page2">Forgive us our trespasses as we forgive those who</button>
+        <button data-page="page3">And do not let us enter into temptation, but deliver us</button>
+        <div id="page1">
+            <h1>This is page 1.</h1>
+        </div>
+        <div id="page2">
+            <h1>This is page 2.</h1>
+        </div>
+        <div id="page3">
+            <h1>This is page 3.</h1>
+        </div> 
+>>>>>>> 843a856973590abbe6ca641906b3129875ef4165
     </body>
 </html>
