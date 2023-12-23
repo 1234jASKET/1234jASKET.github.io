@@ -22,9 +22,10 @@
     text-align: center;
     }
 
-    ul > li {
-        color: red;
-        font-size: 28px;
+    .pray 
+    {
+    color: orange;
+    font-size: 19px;
     text-align: center;
     }
 
@@ -35,7 +36,6 @@
     line-height: 2;
 
     }
-
 
       div {
                 display: none;
@@ -61,7 +61,6 @@
                 document.querySelector(`#${page}`).style.display = 'block';
             }
 
-
             function showPage(page) {
                 document.querySelectorAll('div').forEach(div => {
                     div.style.display = 'none';
@@ -80,19 +79,14 @@
     <body>
         <h2 class="selection">SEAKE-Jounal</h2>
         <h5 class="prions">The world is suffering</h5>
-        <ol>
-            Le monde souffre 
-            
-        </ol>
-
-        <ul>
+        <h6 class="pray"> <ul>
             page2
             <li>The Colorado Supreme Court</li>
             <li>Quebec City has submitted</li>
             <li>Prevost,a Saint-Claire company</li>
             <li>The Ukrainian army</li> 
             <li>National Defence of Canada</li>  
-        </ul>
+        </ul></h6>
         <h7 class="html">Alleluia Alleluia Alleluia</h7>
 
         <h1 id="hello">Our Father who art in heaven,
@@ -110,7 +104,12 @@
             <option value="green">Green</option>
         </select>
 
-        <button data-page="page1"><p>The Colorado Supreme Court found Trump ineligible for 
+        <button data-page="page1">Page 1</button>
+        <button data-page="page2">Page 2</button>
+        <button data-page="page3">Page 3</button>
+        <button data-page="page4">Page 4</button>
+        <div id="page1"><h1></h1></div>
+        <div id="page2"><h1><p>The Colorado Supreme Court found Trump ineligible for 
             the presidential election in that state, 
             citing his role in the assault on the Capitol in January 2021 </p>
 
@@ -130,56 +129,8 @@
          to buy 11 large drones, which will be based 
          in Bagotville and Comox.Ottawa has announced 
          its intention to make the sale of 100% 
-         clean new vehicles mandatory by 2035 </p></button></button>
-        <button data-page="page2">Page 2</button>
-        <button data-page="page3">Page 3</button>
-
-            <div id="page4"><p>A prayer to be read as soon as 
-                I wake up to offer his day to God: "My God, I offer you all the actions
-                 I will do today, to the intentions and for the glory of the Sacred Heart of Jesus;
-                  I want to sanctify the beatings of my heart, my thoughts and my simplest
-                   works, by uniting them with his infinite merits,
-                    and repairing my faults by throwing them into the 
-                    furnace of his merciful love."</p>
-
-                 <p>Prayer to say thank you to God:
-                 "I thank you, my God, for all the graces, with which you constantly fill me,
-                  And which enlighten me, like the light of the sun, 
-                  By them you show me the safe path. 
-                  Thank you, my God, for creating me, for calling me 
-                  from nothingness to existence, for having marked your
-                   divine imprint there, And for having done it only out of love."</p>
-                
-                 <p>Prayer of thanksgiving to God for a grace obtained and for the day:
-                 "My God, today I present myself before you, as I came into the world, 
-                 without possession or title. I come to thank you for everything you have given me, 
-                 for everything you have allowed me to live, for everything you have taught me.
-                  I come to thank you for your unconditional love, 
-                  for your constant presence, for your benevolent protection."</p>
-
-                     <p>Une prière à lire dès le réveil pour offrir sa journée à Dieu1:
-                     “Mon Dieu, je t’offre toutes les actions que je vais faire aujourd’hui,
-                     aux intentions et pour la gloire du Cœur Sacré de Jésus ; 
-                     je veux sanctifier les battements de mon cœur, mes pensées et mes œuvres
-                     les plus simples, en les unissant à ses mérites infinis, 
-                     et réparer mes fautes en les jetant dans la fournaise de son
-                      amour miséricordieux.</p>
-                    
-                      <p>Prière pour dire merci à Dieu: 
-                      “Je te remercie, mon Dieu, pour toutes les grâces, 
-                     Dont tu me combles sans cesse, Et qui m’éclairent, comme la lumière du soleil, 
-                     Par elles tu me montres le chemin sûr.</p> 
-                     Merci, mon Dieu, de m’avoir créée, De m’avoir appelée du néant à l’existence, 
-                     D’y avoir marqué ta divine empreinte, Et de ne l’avoir fait que par amour.”
-
-                     <p>Prière de remerciement à Dieu pour une grâce obtenue et pour la journée:
-                     “Mon Dieu, aujourd’hui je me présente devant vous, comme 
-                     je suis venu au monde, sans possession ni titre. Je viens vous
-                     remercier pour tout ce que vous m’avez donné, pour tout
-                      ce que vous m’avez permis de vivre, pour tout ce que vous m’avez appris.
-                       Je viens vous remercier pour votre amour inconditionnel, 
-                       pour votre présence constante, pour votre protection bienveillante.”</p>
-                       <div id="page5">page 5</div>
-                </h1></div>
+         clean new vehicles mandatory by 2035 </p></h1></div>
+        <div id="page3"><h1></h1></div>
+        <div id="page4"><h1></h1></div>
     </body>
 </html>
