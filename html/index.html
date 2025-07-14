@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+    <style>
+    
+
+    .selection 
+    {
+    background: #e32402;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 50px;
+    font-family: 'Arial Bold';
+    }
+
+    .prions 
+    {
+    color: blue;
+    font-size: 28px;
+    text-align: center;
+    }
+
+    .pray 
+    {
+    color: red;
+    font-size: 19px;
+    text-align: center;
+    }
+
+    .pope 
+    {
+    color: black;
+    font-size: 19px;
+    text-align: center;
+    }
+
+    
+    html {
+    font-weight: normal;
+    font-size: small;
+    line-height: 2;
+
+    }
+
+      div {
+                display: none;
+            }
+
+
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            document.querySelector('select').onchange = function() {
+                document.querySelector('#hello').style.color = this.value;
+        }
+
+        });
+ 
+  
+          function showPage(page) {
+                document.querySelectorAll('div').forEach(div => {
+                    div.style.display = 'none';
+                })
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
+
+            function showPage(page) {
+                document.querySelectorAll('div').forEach(div => {
+                    div.style.display = 'none';
+                });
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = function() {
+                        showPage(this.dataset.page);
+                    }
+                });
+            });
+    </script>
+    <body>
+        <h2 class="selection">SEAKE-Jounal</h2>
+        <h5 class="prions">Alleluia</h5>
+
+        <h6 class="pray"> <ul>
+            <li>Alleluia</li>
+            <li>Alleluia</li>
+            <li>Alleluia</li> 
+        </ul></h6>
+        <h3 class="pope"><ol>
+                <li><p>Our Father who art in heaven,
+                    hallowed be Thy name, Thy kingdom come, 
+                    Thy will be done on earth as it is in heaven.
+                    Give us this day our daily bread.
+                    Forgive us our trespasses as we forgive those who trespass against 
+                   us.
+                    And do not let us enter into temptation, but deliver us from evil. 
+                </h1>
+        </p>
+               </li>  
+            </ol>
+        </h3>
+        <h7 class="html">Alleluia Alleluia Alleluia</h7>
+
+        <h1 id="hello">Alleluia
+        </h1>
+        <select>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+        <button data-page="page1">Page 1</button>
+        <button data-page="page2">Page 2</button>
+        <button data-page="page3">Page 3</button>
+        <button data-page="page4">Page 4</button>
+        <div id="page1"><h1><p>Alleluia</p>
+
+</h1></div>
+        <div id="page2"><h1><p>Alleluia</p>
+
+      </p></h1></div>
+        <div id="page3"><h1><p>Alleluia
+            </p></h1></div>
+        <div id="page4"><h1><p>Alleluia</p>
+            
+            <p>Alleluia</p></h1></div>
+    </body>
+</html>

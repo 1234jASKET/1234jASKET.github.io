@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+    <style>
+    
+
+    .selection 
+    {
+    background: #e32402;
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 50px;
+    font-family: 'Arial Bold';
+    }
+    .prions 
+    {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    }
+
+    .pray 
+    {
+    color: red;
+    font-size: 19px;
+    text-align: left;
+    }
+
+    .pope 
+    {
+    color: black;
+    font-size: 19px;
+    text-align: right;
+    }
+
+    .html
+    {
+    color: blue;
+    font-size: 19px;
+    text-align: center;
+    }
+
+    
+    html {
+    font-weight: normal;
+    font-size: small;
+    line-height: 2;
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    }
+
+      div {
+                display: none;
+            }
+
+
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            document.querySelector('select').onchange = function() {
+                document.querySelector('#hello').style.color = this.value;
+        }
+
+        });
+ 
+  
+          function showPage(page) {
+                document.querySelectorAll('div').forEach(div => {
+                    div.style.display = 'none';
+                })
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
+
+            function showPage(page) {
+                document.querySelectorAll('div').forEach(div => {
+                    div.style.display = 'none';
+                });
+                document.querySelector(`#${page}`).style.display = 'block';
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = function() {
+                        showPage(this.dataset.page);
+                    }
+                });
+            });
+    </script>
+    <body>
+        <h2 class="selection">SEAKE-Jounal</h2>
+        <img src="mesphoto/IMG_4575.jpg" alt="IMG_4575">
+        <h5 class="prions">
+            Alleluia, Alleluia.
+Whoever loves me will keep my word, says the Lord;
+and my Father will love him, and we will come to him.
+Alleluia.
+
+Alleluia. Alleluia.
+Si quelqu’un m’aime, il gardera ma parole, dit le Seigneur ;
+mon Père l’aimera, et nous viendrons vers lui.
+Alléluia.
+.</p></h5>
+
+        <h6 class="pray"> <ul>
+            <img>Alleluia</li>
+            <li>Page1 I believe in God,</li></li>
+            <li>Page2 Our Father</li>
+            <li>Page3 Lecture du livre des Actes des Apôtres (15, 1-2.22-29)</li>
+            <li>Page4 Page4 Lecture de l’Apocalypse de saint Jean (21, 10-14.22-23)</li>
+            <li>Page5 Page5 Évangile de Jésus Christ selon saint Jean (14, 23-29)</li>  
+        </ul></h6>
+        <h3 class="pope">
+            <ol>
+                <li>
+                    <h1>Each day is a new chance to do better than yesterday. Even small steps can take you far, as long as you take them consistently</h1>
+                </li>  
+            </ol>
+        </h3>
+        <h7 class="html">
+             <ol>
+                <li>
+                    <h1>Alleluia Alleluia Alleluia</h1>
+                </li>  
+            </ol>
+        </h7>
+
+        <h1 id="hello">thank you God</h1>
+        <select>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+        <button data-page="page1">Page 1</button>
+        <button data-page="page2">Page 2</button>
+        <button data-page="page3">Page 3</button>
+        <button data-page="page4">Page 4</button>
+        <button data-page="page5">Page 5</button>
+        <div id="page1"><h1><p>I believe in God,
+       the Father almighty,
+       Creator of heaven and earth.
+
+       And in Jesus Christ,
+       his only Son, our Lord,
+       who was conceived by the Holy Spirit,
+       born of the Virgin Mary,
+       suffered under Pontius Pilate,
+       was crucified, died and was buried;
+       he descended into hell;
+       on the third day, he rose again from the dead;
+       he ascended into heaven,
+       and is seated at the right hand of God the Father almighty;
+       from there he will come to judge the living and the dead.
+
+       I believe in the Holy Spirit,
+       the holy Catholic Church,
+       the communion of saints,
+       the forgiveness of sins,
+       the resurrection of the body,
+       and life everlasting.Amen.</p>
+
+       </h1></div>
+        <div id="page2"><h1><p>Our Father who art in heaven,
+        hallowed be Thy name, Thy kingdom come, 
+        Thy will be done on earth as it is in heaven.
+        Give us this day our daily bread.
+        Forgive us our trespasses as we forgive those who trespass against 
+       us.
+        And do not let us enter into temptation, but deliver us from evil.
+       </p></p></h1></div>
+        <div id="page3"><h1><p>Lecture du livre des Actes des Apôtres (15, 1-2.22-29)
+
+En ces jours-là,
+des gens, venus de Judée à Antioche,
+enseignaient les frères en disant :
+« Si vous ne recevez pas la circoncision selon la coutume qui vient de Moïse,
+vous ne pouvez pas être sauvés. »
+Cela provoqua un affrontement ainsi qu’une vive discussion engagée par Paul et Barnabé contre ces gens-là.
+Alors on décida que Paul et Barnabé, avec quelques autres frères,
+monteraient à Jérusalem auprès des Apôtres et des Anciens
+pour discuter de cette question.
+
+Les Apôtres et les Anciens décidèrent avec toute l’Église
+de choisir parmi eux des hommes qu’ils enverraient à Antioche avec Paul et Barnabé.
+C’étaient des hommes qui avaient de l’autorité parmi les frères :
+Jude, appelé aussi Barsabbas, et Silas.
+Voici ce qu’ils écrivirent de leur main :
+
+« Les Apôtres et les Anciens, vos frères,
+aux frères d’origine païenne qui sont à Antioche, en Syrie et en Cilicie,
+salut !
+Attendu que certains des nôtres, comme nous ne leur avions donné aucun mandat,
+sont allés tenir des propos qui ont jeté le trouble parmi vous
+et ont bouleversé vos esprits,
+nous avons pris la décision, à l’unanimité,
+de choisir des hommes
+que nous envoyons chez vous en compagnie de nos frères bien-aimés Barnabé et Paul,
+eux qui ont fait don de leur vie pour le nom de notre Seigneur Jésus Christ.
+Nous vous envoyons donc Jude et Silas,
+qui vous confirmeront de vive voix ce qui suit :
+
+L’Esprit Saint et nous-mêmes avons décidé
+de ne pas faire peser sur vous d’autres obligations
+que celles-ci, qui s’imposent :
+vous abstenir des viandes offertes en sacrifice aux idoles,
+du sang, des viandes non saignées,
+et des unions illégitimes.
+Vous agirez bien si vous vous gardez de tout cela.
+Bon courage. 
+       </p></p></h1></div>
+        <div id="page4"><h1><p>Lecture de l’Apocalypse de saint Jean (21, 10-14.22-23)
+
+Moi, Jean,
+un ange, en esprit, m’emporta sur une grande et haute montagne.
+Il me montra la Ville sainte, Jérusalem,
+qui descendait du ciel, d’auprès de Dieu.
+Elle resplendissait de la gloire de Dieu :
+son éclat était celui d’une pierre précieuse,
+comme le jaspe cristallin.
+
+Elle avait une grande et haute muraille,
+avec douze portes,
+et, sur ces portes, douze anges
+et des noms inscrits :
+ceux des douze tribus des fils d’Israël.
+Il y avait trois portes à l’orient, trois au nord, trois au midi, et trois à l’occident.
+
+La muraille de la ville reposait sur douze fondations
+portant les noms des douze Apôtres de l’Agneau.
+
+Dans la ville, je ne vis pas de sanctuaire,
+car son sanctuaire,
+c’est le Seigneur Dieu, Souverain de l’univers,
+et l’Agneau.
+
+La ville n’a besoin ni du soleil ni de la lune pour l’éclairer,
+car la gloire de Dieu l’illumine :
+son flambeau, c’est l’Agneau.
+        </p></p></h1></div>
+        <div id="page5"><h1><p>Évangile de Jésus Christ selon saint Jean (14, 23-29)
+
+En ce temps-là,
+Jésus disait à ses disciples :
+« Si quelqu’un m’aime,
+il gardera ma parole ;
+mon Père l’aimera,
+nous viendrons vers lui
+et, chez lui, nous nous ferons une demeure.
+Celui qui ne m’aime pas ne garde pas mes paroles.
+Or, la parole que vous entendez n’est pas de moi :
+elle est du Père, qui m’a envoyé.
+
+Je vous parle ainsi, tant que je demeure avec vous ;
+mais le Défenseur, l’Esprit Saint,
+que le Père enverra en mon nom,
+lui, vous enseignera tout,
+et il vous fera souvenir de tout ce que je vous ai dit.
+
+Je vous laisse la paix,
+je vous donne ma paix ;
+ce n’est pas à la manière du monde que je vous la donne.
+Que votre cœur ne soit pas bouleversé ni effrayé.
+Vous avez entendu ce que je vous ai dit :
+“Je m’en vais, et je reviens vers vous.”
+Si vous m’aimiez, vous seriez dans la joie
+puisque je pars vers le Père,
+car le Père est plus grand que moi.
+
+Je vous ai dit ces choses maintenant,
+avant qu’elles n’arrivent ;
+ainsi, lorsqu’elles arriveront,
+vous croirez.
+        </p></p></h1></div>
+            
+    </body>
+</html>
